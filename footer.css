@@ -1,0 +1,44 @@
+footer{
+	width: 100%;
+/*	height: 25vh;*/
+	background: #222;
+	color:white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+	align-content: center;
+	justify-content: center;
+}
+footer .social-media{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2px;
+	gap: 4px;
+	margin:10px;
+}
+footer .social-media a{
+	display: flex;
+	flex-wrap: wrap;
+	margin:20px;
+	text-decoration: none;
+}
+footer .social-media a i{
+	background: white;
+	color: black;
+	scale: 2.0;
+	border-radius: 2em;
+	padding: 4px;
+}
+footer .social-media a i:hover{
+	background: black;
+	color: white;
+	transition: 0.5s;
+}
+footer .copywrite{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+	margin-bottom:2px ;
+}
