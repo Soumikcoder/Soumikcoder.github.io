@@ -51,17 +51,17 @@ body{
 	width:40%;
 
 }
-@media (max-width: 500px){
-	header{
-		margin:-14vh auto;
-	}
+
+@media (max-width: 590px){
 	.about{
-		margin:15vh 0px;
+		margin: 0px;
 	 	display:flex;
 	 	flex-direction: column;
 	 	column-gap: 10px;
 	 	flex-wrap: wrap;
 	 	padding: 10px;
+	 	padding-top: 15vh;
+
 	 	height: auto;
 	}
 	.about .intro{

@@ -8,13 +8,16 @@ header{
 	border-radius:2em ;
 	position: fixed;
 	z-index: 20;
-	margin-right: 8px;
+	margin: 6px;
 }
 @media header(max-width:590px){
 	header{
 		width:40px;
+		margin: -20%;
+		margin-right: 8px;
 	}
 }
+
 .navbar .menu{
 	background: black;
 	color:white;

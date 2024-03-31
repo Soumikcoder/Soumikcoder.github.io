@@ -3,8 +3,8 @@
 	margin: 5% 2% ;
 	background: black;
 	color:white;
-	width: 330px;
-	height: 500px;
+	width: 320px;
+	height: 440px;
 	border-radius:2em;
 	display: flex;
 	flex-direction: column;
@@ -33,6 +33,7 @@
 }
 .cards .description p{
 	padding: 10px;
+	height: 40%;
 }
 .cards .description .btn{
 	height: 15%;
