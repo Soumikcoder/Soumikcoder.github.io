@@ -1,5 +1,4 @@
 header{
-	background: black;
 	color:white;
 	display: flex;
 	flex-wrap: wrap;
@@ -9,6 +8,13 @@ header{
 	position: fixed;
 	z-index: 20;
 	margin: 6px;
+	/* From https://css.glass */
+	background: rgba(0, 0, 0, 0.66);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.7px);
+	-webkit-backdrop-filter: blur(6.7px);
+	border: 1px solid rgba(0, 0, 0, 0.71);
 }
 @media header(max-width:590px){
 	header{
@@ -19,7 +25,6 @@ header{
 }
 
 .navbar .menu{
-	background: black;
 	color:white;
 	border-radius:2em;
 	list-style: none;
@@ -53,5 +58,5 @@ header{
 	width:100%;
 }
 .navbar .menu li a:hover{
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
