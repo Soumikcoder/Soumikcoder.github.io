@@ -1,5 +1,5 @@
 header{
-	color:white;
+	color:var(--glass-font);
 	display: flex;
 	flex-wrap: wrap;
 	max-width:600px;
@@ -9,7 +9,8 @@ header{
 	z-index: 20;
 	margin: 6px;
 	/* From https://css.glass */
-	background: rgba(0, 0, 0, 0.66);
+/*	background: rgba(0, 0, 0, 0.66);*/
+	background: var(--glass-overlay);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(6.7px);
@@ -40,10 +41,10 @@ header{
 	display:flex;
 	flex-direction: column;
 	text-decoration: none;
-	color: white;
+	color: var(--glass-font);
 	margin: 4px 4px;
 	font-style: bold;
-	text-shadow:1px 1px 7px lightyellow; ,-1px -1px 7px lightyellow;
+	text-shadow:1px 1px 7px lightyellow ,-1px -1px 7px lightyellow;
 	transition:all 0.3s;
 }
 
@@ -59,4 +60,34 @@ header{
 }
 .navbar .menu li a:hover{
 	transform: scale(1.2);
+}
+
+.toggler{
+	height: 20px;
+	width:40px;
+	padding: 10px;
+	margin: auto;
+	margin-right: 10px;
+	background: var(--bg-color);
+	border-radius: 2em;
+	position: relative;
+}
+.toggler::before{
+	content: "";
+	background-color: var(--font);
+	position: absolute;
+	height: 12px;
+	width:12px ;
+	top: 4px;
+	right: 3px;
+	margin: auto;
+	border-radius: 2em;
+	transition: all 0.3s linear;
+}
+#themeswitch{
+	display: none;
+}
+#themeswitch:checked + .toggler::before{
+	content: "";
+	translate:-20px 0;
 }

@@ -12,8 +12,9 @@
 	<link rel="stylesheet" href="card.css">
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="script.js" defer></script>
 </head>
-<body>
+<body class="">
 	<header>
 		<div class="navbar">
 			<ul class="menu">
@@ -22,6 +23,8 @@
 				<li id="menu3"><a href="#skills">Skills</a></li>
 				<li id="menu4"><a href="#projects">Projects</a></li>
 				<li id="menu5"><a href="#contact">Contact</a></li>
+				<input type="checkbox" id="themeswitch"/>
+				<label for="themeswitch" class="toggler"/>
 			</ul>
 		</div>
 	</header>
@@ -39,7 +42,7 @@
 		</div>
 		<div class="cv-intro">
 			<p >Let's Introduce My Self</p><br>
-			<div class="glow-btn"><a href="resources/CV.pdf" target="_blank">Download CV</a></div>
+			<div class="glow-btn"><a href="https://www.canva.com/design/DAGJ_-myT0o/FdritHu1W-L0ohD5gvjurw/view" target="_blank">Download CV</a></div>
 		</div>
 	</div>
 	<div class="skills" id="skills">
@@ -79,9 +82,9 @@
 			</div>
 		</div>
 		<div class="cards">
-			<div class="img"><img src="images/javacal.jpg" alt="calculator"></div>
+			<div class="img"><img class="cropped-image" src="https://github.com/Soumikcoder/ecommerce-backend/raw/master/resources/Screenshot_Swagger_UI.png" alt="calculator"></div>
 			<div class="description">
-				<h1>Java Swing Calculator</h1>
+				<h1>Ecomm-Backend</h1>
 				<p>A Java Swing calculator built with love and pixels.</p>
 				<a href="https://github.com/Soumikcoder/Calculator_Java" target="_blank" class="btn">Read More</a>
 			</div>
@@ -90,7 +93,7 @@
 	</div>
 	<footer id="contact">
 			<div class="social-media">
-				<a href="mailto:soumik20020906@gmail.com"><i class="fa-brands fa-google"></i></a>
+				<a href="mailto:soumik20020906@gmail.com"><i class="fa fa-envelope"></i></a>
 				<a href="https://twitter.com/soumikcoder"><i class="fa-brands fa-twitter"></i></a>
 				<a href="https://linkedin.com/in/soumik-pal-676924228"><i class="fa-brands fa-linkedin"></i></a>
 				<a href="https://github.com/Soumikcoder/"><i class="fa-brands fa-github"></i></a>

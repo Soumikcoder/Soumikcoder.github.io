@@ -45,7 +45,7 @@
 	height: 30%;
 }
 .cards .description .btn{
-	height: 12%;
+	height: auto;
 	width:35%;
 	display: flex;
 	justify-content: center;
@@ -69,4 +69,11 @@
 	.cards .description .btn{
 		font-size: 14px;
 	}
+}
+
+.cropped-image {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+
 }
